@@ -6,6 +6,7 @@ import {
   NavLink,
   Route,
   Routes,
+  useLocation,
   useNavigate,
 } from "react-router-dom";
 import axios from "axios";
@@ -36,6 +37,60 @@ import {
 import "./styles.css";
 const api = axios.create({ baseURL: "/api" });
 const A = "/uploads/";
+const SITE_URL = "https://rent-alat.ice.lol";
+const seoByPath = {
+  "/": {
+    title: "Rent Alat Visoko | Iznajmljivanje profesionalnog alata",
+    description:
+      "Iznajmljivanje profesionalnog alata u Visokom, Sarajevu, Brezi, Kaknju i okolini. Povoljne cijene, brza rezervacija i dostava na adresu.",
+  },
+  "/alati": {
+    title: "Alati za najam | Rent Alat Visoko",
+    description:
+      "Pregledajte profesionalne alate za gradnju, renoviranje i vrt. Provjerite dostupnost i rezervišite alat u Visokom i okolini.",
+  },
+  "/o-nama": {
+    title: "O nama | Rent Alat Visoko",
+    description:
+      "Lokalni partner za najam pouzdanog profesionalnog alata u Visokom, Sarajevu, Brezi, Kaknju i okolnim mjestima.",
+  },
+  "/dostava": {
+    title: "Dostava alata | Visoko i okolina",
+    description:
+      "Dogovorite brzu dostavu i preuzimanje iznajmljenog alata na kućnu ili poslovnu adresu u Visokom i okolini.",
+  },
+  "/kontakt": {
+    title: "Kontakt i rezervacija | Rent Alat Visoko",
+    description:
+      "Pošaljite upit ili pozovite Rent Alat Visoko na +387 61 059 156 za dostupnost, cijenu i rezervaciju alata.",
+  },
+};
+
+function RouteSeo() {
+  const { pathname } = useLocation();
+  const isAdmin = pathname.startsWith("/admin");
+  const seo = seoByPath[pathname] || seoByPath["/"];
+  const canonicalPath = seoByPath[pathname] ? pathname : "/";
+  const canonicalUrl = `${SITE_URL}${canonicalPath === "/" ? "/" : canonicalPath}`;
+
+  useEffect(() => {
+    const setMeta = (selector, attribute, value) => {
+      const element = document.head.querySelector(selector);
+      if (element) element.setAttribute(attribute, value);
+    };
+    document.title = isAdmin ? "Administracija | Rent Alat Visoko" : seo.title;
+    setMeta('meta[name="description"]', "content", seo.description);
+    setMeta('meta[name="robots"]', "content", isAdmin ? "noindex, nofollow" : "index, follow, max-image-preview:large");
+    setMeta('link[rel="canonical"]', "href", canonicalUrl);
+    setMeta('meta[property="og:url"]', "content", canonicalUrl);
+    setMeta('meta[property="og:title"]', "content", seo.title);
+    setMeta('meta[property="og:description"]', "content", seo.description);
+    setMeta('meta[name="twitter:title"]', "content", seo.title);
+    setMeta('meta[name="twitter:description"]', "content", seo.description);
+  }, [canonicalUrl, isAdmin, seo]);
+
+  return null;
+}
 const copy = {
   bs: {
     nav: ["Početna", "Alati", "O nama", "Dostava", "Kontakt"],
@@ -901,6 +956,7 @@ function App() {
     );
   return (
     <BrowserRouter>
+      <RouteSeo />
       <Layout lang={lang} setLang={setLang} theme={theme} setTheme={setTheme}>
         <AnimatePresence mode="wait">
           <Routes>

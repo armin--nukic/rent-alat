@@ -1,0 +1,17 @@
+{
+  "name": "Rent Alat Visoko",
+  "short_name": "Rent Alat",
+  "description": "Iznajmljivanje profesionalnog alata u Visokom i okolini.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b0c0e",
+  "theme_color": "#0b0c0e",
+  "icons": [
+    {
+      "src": "/brand-mark.png",
+      "sizes": "1254x1254",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
