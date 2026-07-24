@@ -1,0 +1,13 @@
+.git
+.github
+.env
+.env.*
+!.env.example
+.agents
+node_modules
+**/node_modules
+**/dist
+**/uploads
+*.log
+*.md
+docker-compose*.yml

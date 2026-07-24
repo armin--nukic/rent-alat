@@ -1,14 +1,13 @@
+name: rent-alat
+
 services:
   database:
     image: postgres:16-alpine
-    container_name: rent-alat-postgres
     restart: unless-stopped
     environment:
       POSTGRES_DB: ${POSTGRES_DB}
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
-    ports:
-      - "${POSTGRES_HOST_PORT:-5544}:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
@@ -16,14 +15,15 @@ services:
       interval: 5s
       timeout: 5s
       retries: 15
+    networks:
+      - internal
 
   backend:
-    image: ${BACKEND_IMAGE:-rent-alat-backend:local}
-    build: ./backend
-    container_name: rent-alat-api
+    image: ${BACKEND_IMAGE:?BACKEND_IMAGE must be set}
     restart: unless-stopped
+    init: true
     environment:
-      NODE_ENV: ${NODE_ENV:-production}
+      NODE_ENV: production
       PORT: 8888
       DATABASE_URL: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@database:5432/${POSTGRES_DB}?schema=public
       JWT_SECRET: ${JWT_SECRET}
@@ -35,9 +35,7 @@ services:
       SMTP_PORT: ${SMTP_PORT:-587}
       SMTP_USER: ${SMTP_USER:-}
       SMTP_PASS: ${SMTP_PASS:-}
-      SMTP_FROM: ${SMTP_FROM:-Rent Alat BiH <no-reply@rent-alat.ice.lol>}
-    ports:
-      - "${BACKEND_HOST_PORT:-8888}:8888"
+      SMTP_FROM: ${SMTP_FROM:-Rent Alat BiH <no-reply@rentalat.ba>}
     volumes:
       - uploads_data:/app/uploads
     depends_on:
@@ -49,12 +47,11 @@ services:
       timeout: 5s
       start_period: 30s
       retries: 5
-    init: true
+    networks:
+      - internal
 
   frontend:
-    image: ${FRONTEND_IMAGE:-rent-alat-frontend:local}
-    build: ./frontend
-    container_name: rent-alat-web
+    image: ${FRONTEND_IMAGE:?FRONTEND_IMAGE must be set}
     restart: unless-stopped
     ports:
       - "${FRONTEND_HOST_PORT:-7777}:80"
@@ -67,19 +64,11 @@ services:
       timeout: 5s
       start_period: 10s
       retries: 3
+    networks:
+      - internal
 
-  prisma-studio:
-    build: ./backend
-    container_name: rent-alat-prisma-studio
-    command: npx prisma studio --hostname 0.0.0.0 --port 6666
-    environment:
-      DATABASE_URL: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@database:5432/${POSTGRES_DB}?schema=public
-    ports:
-      - "${PRISMA_STUDIO_HOST_PORT:-6666}:6666"
-    depends_on:
-      database:
-        condition: service_healthy
-    profiles: ["tools"]
+networks:
+  internal:
 
 volumes:
   postgres_data:

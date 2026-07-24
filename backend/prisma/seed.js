@@ -20,7 +20,10 @@ const tools = [
   ['Čekić Bušilica','Rotary Hammer','Za beton, zidove i građevinske radove.','For concrete, walls and construction work.',30,'Građevinski alati','photo-1572981779307-38b8cabb2407'],
   ['Vibro Ploča','Plate Compactor','Kompaktna vibro ploča za pripremu podloge.','Compact plate compactor for ground preparation.',55,'Građevinski alati','photo-1590479773265-7464e5d48118'],
   ['Motorni Trimer','Petrol Grass Trimmer','Uredite travu, ivice i nepristupačne dijelove dvorišta.','Tidy grass, edges and hard-to-reach areas of the garden.',30,'Vrtni alati','photo-1592417817098-8fd3d9eb14a5'],
-  ['Puhač Lišća','Leaf Blower','Brzo čišćenje lišća i sitnog otpada oko objekta.','Fast clearing of leaves and light debris around a property.',25,'Vrtni alati','photo-1600679472829-3044539ce8ed']
+  ['Puhač Lišća','Leaf Blower','Brzo čišćenje lišća i sitnog otpada oko objekta.','Fast clearing of leaves and light debris around a property.',25,'Vrtni alati','photo-1600679472829-3044539ce8ed'],
+  ['Brusilica','Angle Grinder','Profesionalna brusilica za rezanje i brušenje metala, kamena i betona.','Professional angle grinder for cutting and grinding metal, stone and concrete.',30,'Brusilice','/images/tools/brusilica.jpg'],
+  ['Štemalica','Demolition Hammer','Profesionalna štemalica za rušenje betona, zidova i podova.','Professional demolition hammer for breaking concrete, walls and floors.',80,'Građevinski alati','/images/tools/stemalica.jpg'],
+  ['Motorna freza','Garden Tiller','Motorna freza za obradu zemlje i pripremu vrta.','Powered garden tiller for cultivating soil and preparing garden beds.',40,'Vrtni alati','/images/tools/motorna-freza.jpg']
 ];
 
 async function main() {
@@ -37,7 +40,7 @@ async function main() {
     const existing = await prisma.tool.findFirst({ where: { name_bs } });
     if (!existing) {
       await prisma.tool.create({
-        data: { name_bs, name_en, description_bs, description_en, price, category, image: `https://images.unsplash.com/${photo}?auto=format&fit=crop&w=900&q=82` }
+        data: { name_bs, name_en, description_bs, description_en, price, category, image: photo.startsWith('/') ? photo : `https://images.unsplash.com/${photo}?auto=format&fit=crop&w=900&q=82` }
       });
     }
   }

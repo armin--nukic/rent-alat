@@ -162,6 +162,8 @@ Javne rute: `GET /tools`, `GET /tools/:id`, `POST /contact`, `POST /login`. Zaš
 - [Lokalni razvoj / Local development](LOCAL.md)
 - [Migracija baze / Database migration](DB-MIGRATE.md)
 - [VPS deployment](FULL-VPS-DEPLOY.md)
+- [Automatski CI/CD deployment](ci-cd.md)
+- [Besplatni CI/CD bez ručnog `git pull`](free-ci-cd.md)
 - [GitHub upute / GitHub guide](GITHUB.md)
 
 </details>
@@ -179,6 +181,7 @@ Fotografije opreme dolaze s [Wikimedia Commons](https://commons.wikimedia.org/) 
 | Kanal / Channel | Informacije / Details |
 |---|---|
 | 🌐 Web | [rent-alat.ice.lol](https://rent-alat.ice.lol/) |
+| ☎️ Telefon / Phone | [+387 61 059 156](tel:+38761059156) |
 | ✉️ Email | [info@rentalat.ba](mailto:info@rentalat.ba) |
 | 📝 Rezervacija / Booking | [Pošaljite upit / Send an enquiry](https://rent-alat.ice.lol/kontakt) |
 | 📍 Područje / Area | Centralna Bosna i sarajevska regija / Central Bosnia & Sarajevo region |
