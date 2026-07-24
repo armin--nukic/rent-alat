@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rent-alat.ice.lol/sitemap.xml

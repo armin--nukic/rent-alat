@@ -1,0 +1,4 @@
+CREATE TABLE "Tool" ("id" TEXT NOT NULL, "name_bs" TEXT NOT NULL, "name_en" TEXT NOT NULL, "description_bs" TEXT NOT NULL, "description_en" TEXT NOT NULL, "price" INTEGER NOT NULL, "image" TEXT NOT NULL, "available" BOOLEAN NOT NULL DEFAULT true, "category" TEXT NOT NULL, "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP, CONSTRAINT "Tool_pkey" PRIMARY KEY ("id"));
+CREATE TABLE "Message" ("id" TEXT NOT NULL, "name" TEXT NOT NULL, "phone" TEXT NOT NULL, "email" TEXT NOT NULL, "message" TEXT NOT NULL, "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP, CONSTRAINT "Message_pkey" PRIMARY KEY ("id"));
+CREATE TABLE "User" ("id" TEXT NOT NULL, "username" TEXT NOT NULL, "passwordHash" TEXT NOT NULL, "role" TEXT NOT NULL DEFAULT 'ADMIN', CONSTRAINT "User_pkey" PRIMARY KEY ("id"));
+CREATE UNIQUE INDEX "User_username_key" ON "User"("username");
