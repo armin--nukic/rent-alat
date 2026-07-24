@@ -1,121 +1,128 @@
 <div align="center">
 
 <a href="https://rent-alat.ice.lol/">
-  <img src="frontend/public/logo.svg" alt="Rent Alat BiH — iznajmljivanje profesionalnog alata" width="312" />
+  <img src="frontend/public/logo.svg" alt="Rent Alat Bosna i Hercegovina" width="340" />
 </a>
 
-# Iznajmljivanje alata u Bosni i Hercegovini
+# Profesionalno iznajmljivanje alata u Bosni i Hercegovini
 
-**Pouzdani građevinski, vrtni i profesionalni alati — dostupni kada su vam potrebni.**<br />
-Jednostavan pregled ponude, brza rezervacija i dogovorena dostava na području Visokog, Sarajeva, Kaknja, Breze, Vareša i Olova.
+### Professional Tool & Equipment Rental in Bosnia and Herzegovina
+
+**Građevinski, vrtni, električni i profesionalni alati — spremni za vaš sljedeći projekat.**<br />
+Reliable construction, garden and power equipment — ready when your project starts.
 
 [![Web stranica](https://img.shields.io/badge/OTVORI_WEB-RENT_ALAT_BiH-FFD21F?style=for-the-badge&logo=googlechrome&logoColor=111111)](https://rent-alat.ice.lol/)
-[![Bosna i Hercegovina](https://img.shields.io/badge/LOKACIJA-BOSNA_I_HERCEGOVINA-002395?style=for-the-badge)](#-područja-koja-pokrivamo)
-[![Status](https://img.shields.io/badge/STATUS-AKTIVAN-22C55E?style=for-the-badge)](https://rent-alat.ice.lol/)
+[![Bosna i Hercegovina](https://img.shields.io/badge/USLUGA-BOSNA_I_HERCEGOVINA-002395?style=for-the-badge)](#-područje-usluge--service-area)
+[![Dostava opreme](https://img.shields.io/badge/DOSTAVA-PO_DOGOVORU-22C55E?style=for-the-badge&logo=deliveroo&logoColor=white)](https://rent-alat.ice.lol/dostava)
 
 [![React](https://img.shields.io/badge/React_19-20232A?style=flat-square&logo=react&logoColor=61DAFB)](https://react.dev/)
 [![Express](https://img.shields.io/badge/Express_5-111111?style=flat-square&logo=express&logoColor=white)](https://expressjs.com/)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL_16-4169E1?style=flat-square&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 [![Docker](https://img.shields.io/badge/Docker-ready-2496ED?style=flat-square&logo=docker&logoColor=white)](https://www.docker.com/)
 
-[Pogledaj alate](https://rent-alat.ice.lol/alati) · [Zatraži rezervaciju](https://rent-alat.ice.lol/kontakt) · [Dostava](https://rent-alat.ice.lol/dostava)
+[**Pregledaj opremu**](https://rent-alat.ice.lol/alati) · [**Zatraži rezervaciju**](https://rent-alat.ice.lol/kontakt) · [**Informacije o dostavi**](https://rent-alat.ice.lol/dostava)
 
 </div>
 
 ---
 
-## ✨ Šta platforma nudi
+## 🏆 O nama / About Us
 
-| | Funkcionalnost | Opis |
-|:--:|---|---|
-| 🔎 | **Brza pretraga** | Pronađite odgovarajući alat prema nazivu ili kategoriji. |
-| ✅ | **Pregled dostupnosti** | Odmah provjerite da li je odabrani alat slobodan za najam. |
-| 📅 | **Jednostavna rezervacija** | Pošaljite upit bez komplikovanih koraka i nepotrebne papirologije. |
-| 🚚 | **Dogovorena dostava** | Dostava i preuzimanje alata prema terminu i lokaciji. |
-| 💬 | **Direktan kontakt** | Brz dogovor o cijeni, periodu najma i tehničkim detaljima. |
-| 🌐 | **BS / EN iskustvo** | Dvojezičan interfejs prilagođen korisnicima u BiH i posjetiocima. |
-| 🌙 | **Moderan prikaz** | Responzivan dizajn, tamna tema i ugodno korištenje na svim uređajima. |
+**Rent Alat Bosna i Hercegovina** je moderna platforma za jednostavno iznajmljivanje pouzdane opreme za gradnju, renoviranje, održavanje okućnice i profesionalne terenske radove. Pomažemo privatnim korisnicima, majstorima i poslovnim timovima da do kvalitetnog alata dođu brzo — bez troška kupovine, skladištenja i održavanja.
 
-## 🧰 Alati u ponudi
+**Rent Alat Bosnia and Herzegovina** is a modern rental platform for reliable construction, landscaping and professional equipment. Homeowners, contractors and business teams can quickly access the right tool without the cost of ownership, storage or maintenance.
 
-| 🌿 Vrt i okućnica | 🏗️ Gradnja i uređenje | ⚡ Energija i radionica |
-|:---:|:---:|:---:|
-| **Motorni trimeri** | **Vibro ploče** | **Agregati** |
-| **Motorne pile** | **Motorne bušilice** | **Kompresori** |
-| **Leđni puhači** | **Mješalice za beton** | **Električni alati** |
-| **Vrtni alati** | **Ljestve** | **Aku alati** |
-| **Visokotlačni perači** | **Građevinski alati** | **Profesionalni alati** |
+| 🔎 Jednostavan izbor | ✅ Provjerena oprema | 🚚 Fleksibilna dostava | 💬 Direktna podrška |
+|:---:|:---:|:---:|:---:|
+| Pretraga po nazivu i kategoriji | Pregled prije svakog najma | Centralna Bosna i sarajevska regija | Pomoć pri izboru opreme |
 
-> Ponuda se redovno dopunjava. Aktuelnu dostupnost i cijenu provjerite u [online katalogu alata](https://rent-alat.ice.lol/alati).
+## 🧰 Galerija opreme / Equipment Gallery
 
-## ⭐ Zašto izabrati Rent Alat BiH?
+> Stvarna ponuda, cijena i raspoloživost mogu se mijenjati. Provjerite [aktuelni online katalog](https://rent-alat.ice.lol/alati) ili pošaljite upit za termin.
 
-- **Profesionalna oprema** — pouzdani alati spremni za zahtjevne privatne i poslovne projekte.
-- **Fer i jasne cijene** — transparentna dnevna cijena bez nepotrebnih troškova.
-- **Lokalna i brza usluga** — jednostavan dogovor s timom koji poznaje potrebe kupaca u centralnoj BiH.
-- **Ušteda bez kompromisa** — koristite kvalitetan alat bez troška kupovine, skladištenja i održavanja.
-- **Podrška pri odabiru** — pomažemo vam da izaberete odgovarajuću opremu za konkretan posao.
-- **Fleksibilna dostava** — dogovor termina isporuke i preuzimanja na vašoj adresi.
+| | |
+|:---:|:---:|
+| <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Decespugliatore.jpg" alt="Motorni trimer za iznajmljivanje u Bosni i Hercegovini / Brush cutter rental" width="420" /><br /><br />**🌿 Motorni trimer / Brush Cutter**<br />Za košenje visoke trave, korova i teško dostupnih dijelova okućnice.<br /><sub>For cutting tall grass, weeds and hard-to-reach garden areas.</sub> | <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Chainsaw_Wood_Tree_Tool_Chainsaw_Edited_2020_%2849913690821%29.jpg" alt="Motorna pila za najam / Chainsaw rental in Bosnia and Herzegovina" width="420" /><br /><br />**🪚 Motorna pila / Chainsaw**<br />Snažna oprema za rezanje ogrjevnog drveta, grana i zahtjevne radove.<br /><sub>Powerful equipment for firewood, branches and demanding cutting jobs.</sub> |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Aa_backpackleafblower.jpg" alt="Leđni puhač lišća za najam / Backpack leaf blower rental" width="420" /><br /><br />**🍂 Leđni puhač / Backpack Leaf Blower**<br />Brzo uklanjanje lišća i sitnog otpada s velikih vanjskih površina.<br /><sub>Fast clearing of leaves and light debris from larger outdoor areas.</sub> | <img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Asphalt_pavement_plate_compactor.jpg" alt="Vibro ploča za iznajmljivanje / Plate compactor rental" width="420" /><br /><br />**🏗️ Vibro ploča / Plate Compactor**<br />Za zbijanje zemlje, šljunka, pijeska i pripremu stabilne podloge.<br /><sub>For compacting soil, gravel and sand before paving or construction.</sub> |
+| <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&amp;fit=crop&amp;w=900&amp;q=82" alt="Motorna bušilica za najam / Power drill rental" width="420" /><br /><br />**🔩 Motorna bušilica / Power Drill**<br />Pouzdano bušenje drveta, metala, zida i drugih radnih površina.<br /><sub>Reliable drilling in wood, metal, masonry and other materials.</sub> | <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Portable_electrical_generator_angle.jpg" alt="Prijenosni agregat za iznajmljivanje / Portable generator rental" width="420" /><br /><br />**⚡ Agregat / Portable Generator**<br />Stabilno napajanje alata i uređaja na gradilištu ili udaljenoj lokaciji.<br /><sub>Dependable power for tools and equipment on remote job sites.</sub> |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Compresor_BTA_Tools_50_Lts._2HP.jpg" alt="Kompresor za iznajmljivanje / Air compressor rental" width="420" /><br /><br />**💨 Kompresor / Air Compressor**<br />Za pneumatske alate, ispuhivanje, pumpanje i radioničke zadatke.<br /><sub>For pneumatic tools, inflation, cleaning and workshop jobs.</sub> | <img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Cement_mixer_3.jpg" alt="Mješalica za beton za najam / Concrete mixer rental" width="420" /><br /><br />**🧱 Mješalica za beton / Concrete Mixer**<br />Ujednačeno i efikasno miješanje betona i maltera na gradilištu.<br /><sub>Efficient, consistent mixing of concrete and mortar on site.</sub> |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Extension_Ladder_SAAM-2011.37.14_2.jpg" alt="Produžne ljestve za iznajmljivanje / Extension ladder rental" width="420" /><br /><br />**🪜 Ljestve / Extension Ladder**<br />Sigurniji pristup visini za montažu, održavanje i završne radove.<br /><sub>Practical height access for installation, maintenance and finishing work.</sub> | <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/H%C3%B6gtryckstv%C3%A4tt_-_Pressure_washer_-_Ystad-2011.jpg" alt="Visokotlačni perač za najam / Pressure washer rental" width="420" /><br /><br />**💦 Visokotlačni perač / Pressure Washer**<br />Temeljito pranje terasa, fasada, vozila, prilaza i radnih površina.<br /><sub>Deep cleaning for patios, facades, vehicles and work surfaces.</sub> |
+| <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&amp;fit=crop&amp;w=900&amp;q=82" alt="Električni alat za iznajmljivanje / Electric power tool rental" width="420" /><br /><br />**🔌 Električni alati / Electric Power Tools**<br />Brusilice, pile i druga oprema za rezanje, obradu i renoviranje.<br /><sub>Grinders, saws and equipment for cutting, finishing and renovation.</sub> | <img src="https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&amp;fit=crop&amp;w=900&amp;q=82" alt="Aku alat za iznajmljivanje / Cordless tool rental" width="420" /><br /><br />**🔋 Aku alati / Cordless Tools**<br />Mobilan rad bez kabla za montažu, popravke i profesionalne zadatke.<br /><sub>Cord-free mobility for installation, repairs and professional work.</sub> |
 
-## 📍 Područja koja pokrivamo
+### Dodatne kategorije / Additional Categories
 
-Primarno pružamo usluge iznajmljivanja i dostave alata u Visokom i okolnim gradovima centralne Bosne i Hercegovine.
+| 🏗️ Građevinski alati | 🌱 Vrtni alati | 🛠️ Profesionalna oprema |
+|---|---|---|
+| Bušenje, rezanje, zbijanje i priprema materijala | Košenje, rezanje, čišćenje i održavanje | Oprema za majstore, servise i izvođače |
+| Drilling, cutting, compaction and preparation | Cutting, clearing and property maintenance | Equipment for tradespeople and contractors |
 
-| Grad / općina | Dostupna usluga | Dogovor dostave |
+## ⭐ Zašto Rent Alat BiH? / Why Choose Us?
+
+- **Profesionalna oprema / Professional equipment** — alati spremni za ozbiljne privatne i poslovne projekte.
+- **Jasni uslovi / Clear terms** — transparentne dnevne cijene i dogovor prije preuzimanja.
+- **Pametna ušteda / Better value** — kvalitetna oprema bez troška kupovine i dugoročnog održavanja.
+- **Pomoć pri izboru / Equipment guidance** — preporuka alata prema materijalu, poslu i uslovima rada.
+- **Brza rezervacija / Fast booking** — jednostavan online upit i direktna potvrda dostupnosti.
+- **Dostava po dogovoru / Arranged delivery** — fleksibilna isporuka i preuzimanje opreme.
+
+## 📍 Područje usluge / Service Area
+
+### Dostava širom centralne Bosne i sarajevske regije
+
+Iznajmljivanje i dostava opreme dostupni su širom **centralne Bosne** i **sarajevske regije**. Termin, cijena dostave i mogućnost preuzimanja dogovaraju se prema vrsti alata, trajanju najma i udaljenosti lokacije. Za mjesta izvan glavne zone pošaljite upit — nastojimo organizovati isporuku i u obližnje gradove i naselja.
+
+Equipment rental and delivery are available across **Central Bosnia** and the **Sarajevo region**. Delivery time and cost depend on equipment type, rental duration and distance. Contact us for nearby towns and locations outside the primary service zone.
+
+| Primarno područje / Primary Area | Usluga / Service | Dostava / Delivery |
 |---|:---:|:---:|
-| **Visoko** | ✅ Najam alata | ✅ Da |
-| **Sarajevo** | ✅ Najam alata | ✅ Po dogovoru |
-| **Kakanj** | ✅ Najam alata | ✅ Po dogovoru |
-| **Breza** | ✅ Najam alata | ✅ Po dogovoru |
-| **Vareš** | ✅ Najam alata | ✅ Po dogovoru |
-| **Olovo** | ✅ Najam alata | ✅ Po dogovoru |
+| **Visoko** | ✅ Najam / Rental | ✅ Dostupna / Available |
+| **Sarajevo** | ✅ Najam / Rental | ✅ Po dogovoru / By arrangement |
+| **Kakanj** | ✅ Najam / Rental | ✅ Po dogovoru / By arrangement |
+| **Breza** | ✅ Najam / Rental | ✅ Po dogovoru / By arrangement |
+| **Vareš** | ✅ Najam / Rental | ✅ Po dogovoru / By arrangement |
+| **Olovo** | ✅ Najam / Rental | ✅ Po dogovoru / By arrangement |
+| **Ilijaš** | ✅ Najam / Rental | ✅ Po dogovoru / By arrangement |
+| **Vogošća** | ✅ Najam / Rental | ✅ Po dogovoru / By arrangement |
+| **Zenica** | ✅ Najam / Rental | ✅ Po dogovoru / By arrangement |
+| **Okolna mjesta / Nearby regions** | ✅ Na upit / On request | 📞 Kontaktirajte nas / Contact us |
 
-Za lokacije izvan navedenih područja [pošaljite upit](https://rent-alat.ice.lol/kontakt) — rado ćemo provjeriti mogućnost dostave.
+> 📦 **Trebate dostavu izvan navedenog područja?** [Pošaljite lokaciju i željeni termin](https://rent-alat.ice.lol/kontakt), a mi ćemo provjeriti najbolju opciju.
 
-## ❓ Često postavljena pitanja
+## ❓ Često postavljena pitanja / FAQ
 
 <details>
-<summary><strong>Kako mogu rezervisati alat?</strong></summary>
+<summary><strong>Kako rezervisati alat? / How do I book equipment?</strong></summary>
 <br />
-Otvorite katalog, odaberite alat i pošaljite upit putem kontakt forme. Javit ćemo vam informacije o dostupnosti, cijeni i najranijem terminu preuzimanja ili dostave.
+Odaberite opremu u katalogu i pošaljite upit putem kontakt forme. Potvrdit ćemo dostupnost, cijenu i termin. / Choose equipment from the catalogue and send an enquiry. We will confirm availability, pricing and timing.
 </details>
 
 <details>
-<summary><strong>Da li dostavljate alat na adresu?</strong></summary>
+<summary><strong>Da li dostavljate opremu? / Do you deliver equipment?</strong></summary>
 <br />
-Da. Dostava je dostupna u Visokom, Sarajevu, Kaknju, Brezi, Varešu i Olovu, uz prethodni dogovor o terminu i trošku.
+Da. Dostava je dostupna u centralnoj Bosni, sarajevskoj regiji i okolnim mjestima po dogovoru. / Yes. Arranged delivery is available across Central Bosnia, the Sarajevo region and nearby areas.
 </details>
 
 <details>
-<summary><strong>Koliko dugo mogu iznajmiti alat?</strong></summary>
+<summary><strong>Koliko dugo mogu iznajmiti alat? / How long can I rent a tool?</strong></summary>
 <br />
-Period najma dogovara se prema vašim potrebama i dostupnosti opreme. U upitu navedite željene datume kako bismo vam pripremili tačnu ponudu.
+Trajanje najma prilagođavamo projektu i raspoloživosti opreme. U upitu navedite željene datume. / Rental duration depends on your project and equipment availability. Include the preferred dates in your enquiry.
 </details>
 
 <details>
-<summary><strong>Da li je oprema pregledana prije izdavanja?</strong></summary>
+<summary><strong>Da li je alat pregledan prije najma? / Is equipment inspected?</strong></summary>
 <br />
-Alat se provjerava prije svakog najma kako bi bio ispravan, čist i spreman za rad.
+Oprema se provjerava prije izdavanja kako bi bila ispravna, čista i spremna za rad. / Equipment is checked before handover so it is clean, functional and ready for work.
 </details>
 
 <details>
-<summary><strong>Mogu li dobiti pomoć pri izboru alata?</strong></summary>
+<summary><strong>Možete li preporučiti odgovarajući alat? / Can you recommend the right tool?</strong></summary>
 <br />
-Naravno. Opišite posao koji planirate, materijal i uslove rada, a mi ćemo preporučiti odgovarajuću vrstu opreme.
+Naravno. Opišite posao, materijal i uslove rada, a mi ćemo pomoći pri izboru. / Certainly. Describe the job, material and working conditions, and we will help you choose.
 </details>
 
-<details>
-<summary><strong>Da li su cijene prikazane po danu?</strong></summary>
-<br />
-Da, osnovne cijene u katalogu iskazane su u KM po danu. Konačna cijena zavisi od trajanja najma, dostave i konkretnog dogovora.
-</details>
+## 🚀 Pokretanje projekta / Run Locally
 
-## 🚀 Lokalno pokretanje
-
-### Preduslovi
-
-- [Docker](https://docs.docker.com/get-docker/)
-- Docker Compose
+Potrebni su [Docker](https://docs.docker.com/get-docker/) i Docker Compose.
 
 ```bash
 git clone https://github.com/armin--nukic/rent-alat.git
@@ -124,53 +131,63 @@ cp .env.example .env
 docker compose up --build
 ```
 
-Aplikacija je nakon pokretanja dostupna na `http://localhost:7777`, REST API na `http://localhost:8888`, a PostgreSQL na portu `5544`.
+| Servis | Lokalna adresa |
+|---|---|
+| Web aplikacija | `http://localhost:7777` |
+| REST API | `http://localhost:8888` |
+| PostgreSQL | `localhost:5544` |
 
 > [!IMPORTANT]
-> Prije javnog postavljanja obavezno postavite vlastite sigurne vrijednosti za lozinke, JWT tajnu i SMTP pristup u `.env` datoteci. Datoteku `.env` nikada nemojte commitovati.
+> Prije produkcijskog postavljanja unesite vlastite sigurne lozinke, JWT tajnu i SMTP pristup u `.env`. Datoteku `.env` nikada nemojte commitovati.
 
 <details>
-<summary><strong>Tehnički pregled i API rute</strong></summary>
+<summary><strong>Tehnologije i API / Technology & API</strong></summary>
 <br />
 
-| Sloj | Tehnologije |
+| Sloj / Layer | Tehnologije / Technologies |
 |---|---|
 | Frontend | React 19, Vite, React Router, Framer Motion |
 | Backend | Node.js, Express 5, JWT, Nodemailer |
-| Baza | PostgreSQL 16, Prisma ORM |
-| Infrastruktura | Docker Compose, Nginx, trajni volumeni |
+| Baza / Database | PostgreSQL 16, Prisma ORM |
+| Infrastruktura / Infrastructure | Docker Compose, Nginx, persistent volumes |
 
-Javne rute: `GET /tools`, `GET /tools/:id`, `POST /contact`, `POST /login`. Zaštićene JWT rute omogućavaju dodavanje, uređivanje i brisanje alata te upload JPG, PNG i WebP slika.
+Javne rute: `GET /tools`, `GET /tools/:id`, `POST /contact`, `POST /login`. Zaštićene JWT rute omogućavaju upravljanje ponudom i upload JPG, PNG i WebP slika.
 
 </details>
 
 <details>
-<summary><strong>Dodatna dokumentacija</strong></summary>
+<summary><strong>Dokumentacija / Documentation</strong></summary>
 <br />
 
-- [Lokalni razvoj](LOCAL.md)
-- [Migracija baze podataka](DB-MIGRATE.md)
+- [Lokalni razvoj / Local development](LOCAL.md)
+- [Migracija baze / Database migration](DB-MIGRATE.md)
 - [VPS deployment](FULL-VPS-DEPLOY.md)
-- [GitHub upute](GITHUB.md)
+- [GitHub upute / GitHub guide](GITHUB.md)
 
 </details>
 
-## 📞 Kontakt
+<details>
+<summary><strong>Izvori fotografija / Photo Sources</strong></summary>
+<br />
 
-Imate projekat ili vam je alat potreban već danas?
+Fotografije opreme dolaze s [Wikimedia Commons](https://commons.wikimedia.org/) i [Unsplash](https://unsplash.com/). Autori i pojedinačni uslovi korištenja navedeni su na izvornim stranicama: [motorni trimer](https://commons.wikimedia.org/wiki/File:Decespugliatore.jpg), [motorna pila](https://commons.wikimedia.org/wiki/File:Chainsaw_Wood_Tree_Tool_Chainsaw_Edited_2020_%2849913690821%29.jpg), [leđni puhač](https://commons.wikimedia.org/wiki/File:Aa_backpackleafblower.jpg), [vibro ploča](https://commons.wikimedia.org/wiki/File:Asphalt_pavement_plate_compactor.jpg), [agregat](https://commons.wikimedia.org/wiki/File:Portable_electrical_generator_angle.jpg), [kompresor](https://commons.wikimedia.org/wiki/File:Compresor_BTA_Tools_50_Lts._2HP.jpg), [mješalica](https://commons.wikimedia.org/wiki/File:Cement_mixer_3.jpg), [ljestve](https://commons.wikimedia.org/wiki/File:Extension_Ladder_SAAM-2011.37.14_2.jpg) i [visokotlačni perač](https://commons.wikimedia.org/wiki/File:H%C3%B6gtryckstv%C3%A4tt_-_Pressure_washer_-_Ystad-2011.jpg).
 
-| Kanal | Kontakt |
+</details>
+
+## 📞 Kontakt / Contact
+
+| Kanal / Channel | Informacije / Details |
 |---|---|
 | 🌐 Web | [rent-alat.ice.lol](https://rent-alat.ice.lol/) |
 | ✉️ Email | [info@rentalat.ba](mailto:info@rentalat.ba) |
-| 📝 Upit za najam | [Pošaljite poruku](https://rent-alat.ice.lol/kontakt) |
-| 📍 Područje | Visoko, Sarajevo, Kakanj, Breza, Vareš i Olovo |
+| 📝 Rezervacija / Booking | [Pošaljite upit / Send an enquiry](https://rent-alat.ice.lol/kontakt) |
+| 📍 Područje / Area | Centralna Bosna i sarajevska regija / Central Bosnia & Sarajevo region |
 
-## 🔍 SEO i dostupnost
+## 🔍 SEO i pristupačnost / SEO & Accessibility
 
-Rent Alat BiH povezuje korisnike s ponudom za **iznajmljivanje alata u Visokom, Sarajevu, Kaknju, Brezi, Varešu i Olovu**. Katalog obuhvata građevinske, vrtne, električne i aku alate, kao i profesionalnu opremu poput vibro ploča, agregata, kompresora, motornih pila i mješalica za beton.
+Sadržaj prirodno opisuje uslugu **iznajmljivanja građevinskih, vrtnih, električnih i aku alata u Bosni i Hercegovini**, s dostavom na području centralne Bosne i sarajevske regije. Projekt koristi opisne naslove i alt tekstove, semantičke meta podatke, `robots.txt`, XML sitemapu i responzivan prikaz — korisno posjetiocima, čitačima ekrana i internet pretraživačima.
 
-Projekt uključuje semantičke meta podatke, `robots.txt`, XML sitemapu, opisne naslove i responzivan prikaz. Sadržaj je pisan prirodnim bosanskim jezikom kako bi informacije bile korisne ljudima, a istovremeno jasno razumljive internet pretraživačima.
+The content clearly presents **construction equipment, garden tool and power tool rental in Bosnia and Herzegovina**, including arranged delivery throughout Central Bosnia, Sarajevo and nearby regions. Keywords are used in context to keep the copy useful and readable rather than repetitive.
 
 ---
 
@@ -178,7 +195,8 @@ Projekt uključuje semantičke meta podatke, `robots.txt`, XML sitemapu, opisne 
 
 ### Alat za posao. Usluga na koju možete računati.
 
-**Rent Alat BiH** · Profesionalno iznajmljivanje alata u centralnoj Bosni i Hercegovini
+**Rent Alat Bosna i Hercegovina**<br />
+Professional equipment rental across Central Bosnia and the Sarajevo region
 
 [![Rezerviši alat](https://img.shields.io/badge/REZERVIŠI_ALAT-FFD21F?style=for-the-badge&logoColor=111111)](https://rent-alat.ice.lol/kontakt)
 
