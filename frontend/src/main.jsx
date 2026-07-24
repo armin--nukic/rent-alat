@@ -584,6 +584,18 @@ function About({ lang }) {
       lang === "bs"
         ? "Rent Alat Visoko pruža usluge iznajmljivanja i dostave profesionalnog alata na području Visokog, Sarajeva, Breze, Kaknja i okolnih mjesta. Pomažemo kućnim majstorima, izvođačima i firmama da brzo dođu do pouzdane opreme za svaki projekat."
         : "Rent Alat Visoko provides professional tool rental and delivery across Visoko, Sarajevo, Breza, Kakanj and nearby areas. We help homeowners, contractors and businesses quickly access reliable equipment for every project.";
+  const aboutBanner =
+    lang === "bs"
+      ? {
+          eyebrow: "SNAGA ZA SVAKI PROJEKAT",
+          title: "Pravi alat. Pravi trenutak. Posao završen.",
+          text: "Od prvog reza do posljednjeg detalja — uz vas smo pouzdanim alatom i brzom dostavom.",
+        }
+      : {
+          eyebrow: "POWER FOR EVERY PROJECT",
+          title: "The right tool. The right time. Job done.",
+          text: "From the first cut to the final detail — reliable tools and fast delivery are always within reach.",
+        };
   return (
     <PageTitle
       eyebrow="RENT ALAT VISOKO · SARAJEVO · BREZA · KAKANJ"
@@ -613,6 +625,22 @@ function About({ lang }) {
               <span>posvećenost</span>
             </div>
           </div>
+        </div>
+      </section>
+      <section className="about-brand-banner" aria-label={aboutBanner.title}>
+        <img
+          loading="lazy"
+          src="/og-rent-alat-visoko.jpg"
+          alt="Rent Alat Visoko profesionalni alati za najam"
+        />
+        <div className="about-brand-copy">
+          <p className="eyebrow">{aboutBanner.eyebrow}</p>
+          <h2>{aboutBanner.title}</h2>
+          <p>{aboutBanner.text}</p>
+          <Link className="btn primary" to="/kontakt">
+            {lang === "bs" ? "Rezerviši alat" : "Reserve a tool"}
+            <FiArrowRight />
+          </Link>
         </div>
       </section>
     </PageTitle>
