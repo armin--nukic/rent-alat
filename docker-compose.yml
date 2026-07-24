@@ -2,16 +2,17 @@ services:
   database:
     image: postgres:16-alpine
     container_name: rent-alat-postgres
+    restart: unless-stopped
     environment:
-      POSTGRES_DB: rent_alat
-      POSTGRES_USER: rent_alat
-      POSTGRES_PASSWORD: rent_alat_secure_2026
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     ports:
-      - "5544:5432"
+      - "${POSTGRES_HOST_PORT:-5544}:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U rent_alat -d rent_alat"]
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
       interval: 5s
       timeout: 5s
       retries: 15
@@ -19,22 +20,23 @@ services:
   backend:
     build: ./backend
     container_name: rent-alat-api
+    restart: unless-stopped
     environment:
-      NODE_ENV: production
+      NODE_ENV: ${NODE_ENV:-production}
       PORT: 8888
-      DATABASE_URL: postgresql://rent_alat:rent_alat_secure_2026@database:5432/rent_alat?schema=public
-      JWT_SECRET: change-this-secret-before-public-deployment
-      ADMIN_USERNAME: admin
-      ADMIN_PASSWORD: AdminRentAlat2026!
-      CORS_ORIGIN: http://localhost:7777
-      CONTACT_RECIPIENT: arminnuk@gmail.com
+      DATABASE_URL: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@database:5432/${POSTGRES_DB}?schema=public
+      JWT_SECRET: ${JWT_SECRET}
+      ADMIN_USERNAME: ${ADMIN_USERNAME}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD}
+      CORS_ORIGIN: ${CORS_ORIGIN}
+      CONTACT_RECIPIENT: ${CONTACT_RECIPIENT}
       SMTP_HOST: ${SMTP_HOST:-}
       SMTP_PORT: ${SMTP_PORT:-587}
       SMTP_USER: ${SMTP_USER:-}
       SMTP_PASS: ${SMTP_PASS:-}
       SMTP_FROM: ${SMTP_FROM:-Rent Alat BiH <no-reply@rent-alat.ice.lol>}
     ports:
-      - "8888:8888"
+      - "${BACKEND_HOST_PORT:-8888}:8888"
     volumes:
       - uploads_data:/app/uploads
     depends_on:
@@ -44,8 +46,9 @@ services:
   frontend:
     build: ./frontend
     container_name: rent-alat-web
+    restart: unless-stopped
     ports:
-      - "7777:80"
+      - "${FRONTEND_HOST_PORT:-7777}:80"
     depends_on:
       - backend
 
@@ -54,9 +57,9 @@ services:
     container_name: rent-alat-prisma-studio
     command: npx prisma studio --hostname 0.0.0.0 --port 6666
     environment:
-      DATABASE_URL: postgresql://rent_alat:rent_alat_secure_2026@database:5432/rent_alat?schema=public
+      DATABASE_URL: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@database:5432/${POSTGRES_DB}?schema=public
     ports:
-      - "6666:6666"
+      - "${PRISMA_STUDIO_HOST_PORT:-6666}:6666"
     depends_on:
       database:
         condition: service_healthy
